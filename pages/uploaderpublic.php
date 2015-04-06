@@ -33,14 +33,21 @@ if($loguserid)
 $submit = $_POST['submit'];
 $file = $_POST['file'];
 
-if($submit)
+if($submit) //If you clicked on upload
 {
-	$target_dir = "uploads/";
-	$target_dir = $target_dir . basename( $_FILES["file"]["name"]);
-	$uploadOk=1;
+	date_default_timezone_set('UTC');
+	$target_dir = "uploads/"; //Target folder ./root/uploads
+	$target_dir = $target_dir . basename( $_FILES["file"]["name"]); //Pack file for target folder
+	$uploadOk=1; //If ok
 
-	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) {
-		
+	if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_dir)) { //If uploading was successfully
+		/*$db = $_POST['file']; //Rename variable file into db for mysql
+		$db = "INSERT INTO Tabellenname
+		(url, urlname, name, beschreibung)
+		VALUES
+		('$url', '$urlname', '$name', '$beschreibung')";
+
+		$eintragen = mysql_query($eintrag);*/
 		echo "
 		<table class=\"outline margin\">
 		<tbody><tr class=\"header1\">
@@ -52,10 +59,41 @@ if($submit)
 		<td>
 			<div align=\"center\">
 			Your file was successfully uploaded - <a href=\"uploads/". basename( $_FILES["file"]["name"])."\">Please follow this link</a>
+			<br><br>
 			</div>
 		</td>
 		</tr>
+		<table class=\"outline margin\">
+		<tbody><tr class=\"header1\">
+			<th>
+				Infobox
+			</th>
+		</tr>
+		<tr class=\"cell0\">
+		<td><ul>
+			<b>Uploaded by user:</b> <a href=\"?page=profile&id=$loguserid\">Show profile</a><br>
+			<b>Date: </b>". date('l jS \of F Y h:i:s A');"
+		</ul></td>
+		</tr>
 		";
 	}	
+	else //If uploading was NOT successfully
+	{
+		echo "
+		<table class=\"outline margin\">
+		<tbody><tr class=\"header1\">
+			<th>
+				Error
+			</th>
+		</tr>
+		<tr class=\"cell0\">
+		<td>
+			<div align=\"center\">
+			Unable to upload file
+			</div>
+		</td>
+		</tr>
+		";		
+	}
 }
 ?>
