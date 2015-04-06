@@ -4,9 +4,15 @@ if (!defined('BLARG')) die();
 MakeCrumbs(array(actionLink("uploader") => __("Uploader / Public")), $links);
 $title = __("Uploader / Public");
 $links = array();
-if(HasPermission('admin.editsettings'))
+/*if(HasPermission('admin.editsettings'))
 {
 	//$links[] = actionLinkTag(__("Set up Uploader"), "...", '', 'field=uploaderText');
+}*/
+
+function upload_info()
+{
+		<b>Uploaded by user:</b> <a href=\"?page=profile&id=$loguserid\">Show profile</a><br>
+		<b>Date: </b>". date('l jS \of F Y h:i:s A');"	
 }
 
 if($loguserid)
@@ -71,8 +77,7 @@ if($submit) //If you clicked on upload
 		</tr>
 		<tr class=\"cell0\">
 		<td><ul>
-			<b>Uploaded by user:</b> <a href=\"?page=profile&id=$loguserid\">Show profile</a><br>
-			<b>Date: </b>". date('l jS \of F Y h:i:s A');"
+			upload_info();
 		</ul></td>
 		</tr>
 		";
