@@ -1,19 +1,19 @@
 <?php
-
 if (!defined('BLARG')) die();
 MakeCrumbs(array(actionLink("uploader") => __("Uploader / Public")), $links);
 $title = __("Uploader / Public");
 $links = array();
-/*if(HasPermission('admin.editsettings'))
+if(HasPermission('admin.editsettings'))
 {
 	//$links[] = actionLinkTag(__("Set up Uploader"), "...", '', 'field=uploaderText');
-}*/
-
-function upload_info()
-{
-		<b>Uploaded by user:</b> <a href=\"?page=profile&id=$loguserid\">Show profile</a><br>
-		<b>Date: </b>". date('l jS \of F Y h:i:s A');"	
 }
+
+/*function upload_info()
+{
+	echo "
+		<b>Uploaded by user:</b> <a href=\"?page=profile&id=$loguserid\">Show profile</a><br>
+		<b>Date: </b>". date('l jS \of F Y h:i:s A');";
+}*/
 
 if($loguserid)
 {
@@ -36,8 +36,8 @@ if($loguserid)
 		</tr>';
 }
 
-$submit = $_POST['submit'];
-$file = $_POST['file'];
+$submit = $_POST['submit']; //Port variable from HTML
+$file = $_POST['file']; //Port variable from HTML
 
 if($submit) //If you clicked on upload
 {
@@ -77,7 +77,8 @@ if($submit) //If you clicked on upload
 		</tr>
 		<tr class=\"cell0\">
 		<td><ul>
-			upload_info();
+			<b>Uploaded by user:</b> <a href=\"?page=profile&id=$loguserid\">Show profile</a><br>
+			<b>Date: </b>". date('l jS \of F Y h:i:s A');"
 		</ul></td>
 		</tr>
 		";
