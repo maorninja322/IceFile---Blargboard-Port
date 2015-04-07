@@ -1,1 +1,1 @@
-
+Installer will create a file called db.php
