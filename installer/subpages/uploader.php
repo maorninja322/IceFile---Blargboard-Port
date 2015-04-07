@@ -1,6 +1,4 @@
 <?php
-//  AcmlmBoard XD - Frequently Asked Questions page
-//  Access: all
 if (!defined('BLARG')) die();
 MakeCrumbs(array(actionLink("uploader") => __("Uploader")), $links);
 $title = __("Uploader");
@@ -10,9 +8,7 @@ if(HasPermission('admin.editsettings'))
 	//$links[] = actionLinkTag(__("Set up Uploader"), "...", '', 'field=uploaderText');
 }
 
-if($loguserid)
-{
-	echo '
+echo '
 	<table class="outline margin">
 		<tbody><tr class="header1">
 			<th>
@@ -37,21 +33,4 @@ if($loguserid)
 		</td>
 		</tr>
 </tbody></table>';
-}
-if(!$loguserid)
-{
-	echo '
-	<table class="outline margin">
-		<tbody><tr class="header1">
-			<th>
-				Error
-			</th>
-		</tr>
-		<tr class="cell0">
-		<td>
-			<div align="center">You\'re not logged in</div>
-		</td>
-		</tr>
-</tbody></table>';
-}
 ?>
