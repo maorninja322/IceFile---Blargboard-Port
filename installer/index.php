@@ -67,19 +67,19 @@ div#animation a {
 <hr>
 <table>
 <tr>
-<td><b>DB Server:</b></td>
+<td><b>MySQL Database Server:</b></td>
 <td><input type="text" name="dbs"></input></td>
 </tr>
 <tr>
-<td><b>DB User:</b></td>
+<td><b>MySQL Database Username:</b></td>
 <td><input type="text" name="dbu"></input></td>
 </tr>
 <tr>
-<td><b>DB Password:</b></td>
+<td><b>MySQL Database Password:</b></td>
 <td><input type="password" name="dbp"></input></td>
 </tr>
 <tr>
-<td><b>DB Table:</b></td>
+<td><b>MySQL Database Table:</b></td>
 <td><input type="text" name="dbt"></input></td>
 </tr>
 </table>
@@ -87,7 +87,7 @@ div#animation a {
 <input type="checkbox" disabled="disabled">Add link on topbar</input>
 <hr>
 <input type="submit" name="submit" value="Install"></input><hr>
-<b>Important:</b> Only useable for blargboard Plus & XD
+<b>Important:</b> This Version of Icefile is Only Useable on boards running Blargboard Plus and XD
 <hr>
 Copyright &copy;2014-<?php echo date("Y"); ?> StarLand<br />
 <a href="https://github.com/StarLand64/IceFile---Blargboard-Port">View This Project on GitHub</a>
