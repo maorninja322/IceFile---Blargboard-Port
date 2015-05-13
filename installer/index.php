@@ -1,7 +1,10 @@
+<!DOCTYPE html>
+<html>
 <html lang="en">
 <head>
 <title>Uploader Installer</title>
-<style>
+<!--Fork me on GitHub banner--><style>#forkongithub a{background:#a;color:#fff;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#fff;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/StarLand64/IceFile---Blargboard-Port">Fork me on GitHub</a></span>
+<style type="text/css">
 html, body { background: black; color: white; font-family: calibri; }
 div.main {
 	background: grey;
@@ -64,19 +67,19 @@ div#animation a {
 <hr>
 <table>
 <tr>
-<td><b>DB Server:</b></td>
+<td><b>MySQL Database Server:</b></td>
 <td><input type="text" name="dbs"></input></td>
 </tr>
 <tr>
-<td><b>DB User:</b></td>
+<td><b>MySQL Database Username:</b></td>
 <td><input type="text" name="dbu"></input></td>
 </tr>
 <tr>
-<td><b>DB Password:</b></td>
+<td><b>MySQL Database Password:</b></td>
 <td><input type="password" name="dbp"></input></td>
 </tr>
 <tr>
-<td><b>DB Table:</b></td>
+<td><b>MySQL Database Table:</b></td>
 <td><input type="text" name="dbt"></input></td>
 </tr>
 </table>
@@ -84,9 +87,10 @@ div#animation a {
 <input type="checkbox" disabled="disabled">Add link on topbar</input>
 <hr>
 <input type="submit" name="submit" value="Install"></input><hr>
-<b>Important:</b> Only useable for blargboard Plus & XD
+<b>Important:</b> This Version of Icefile is Only Useable on boards running Blargboard Plus and XD
 <hr>
-Copyright &copy; StarLand, 2015
+Copyright &copy;2014-<?php echo date("Y"); ?> StarLand<br />
+<a href="https://github.com/StarLand64/IceFile---Blargboard-Port">View This Project on GitHub</a>
 </div>
 </form>
 </body>

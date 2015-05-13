@@ -11,3 +11,4 @@ Public - User can upload files and the files will be listed
 
 ## Support?
 You can fork this and can make your own changes to this.
+Support can also be found in [this thread](http://lmlair.ddns.net/thread/519-icefile-blargboard-port/)
