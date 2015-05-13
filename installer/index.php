@@ -57,7 +57,7 @@ div#animation a {
 </style>
 </head>
 <body>
-<div id="animation">Visit us: <a href="http://newersmb7.byethost8.com/" target="_blank">Skiaak's Project</a> / <a href="http://starland-lair.ml" target="_blank">StarLand's Lair</a></div>
+<div id="animation">Need Support? Join <a href="http://starland-lair.ml" target="_blank">StarLand's Lair</a>.</div>
 <form action="install.php" method="post">
 <div class="main" align="center">
 <h1>Uploader Installer - V0.1A</h1>
