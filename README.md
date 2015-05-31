@@ -18,7 +18,6 @@ Public - User can upload files and the files will be listed
 Replace that with this:
 
 "actionLink('board') => 'Forums',
-
 actionLink('uploader') => 'Uploader',"
 
 3. Enjoy your copy of IceFile
