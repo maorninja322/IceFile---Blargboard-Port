@@ -42,7 +42,7 @@ div#animation {
 	top: 0px;
 }
 div#animation a {
-	color: grey;;
+	color: grey;
 	font-weight: bold;
 }
 
@@ -83,8 +83,8 @@ div#animation a {
 <td><input type="text" name="dbt"></input></td>
 </tr>
 </table>
-<hr>
-<input type="checkbox" disabled="disabled">Add link on topbar</input>
+<!--<hr>
+<input type="checkbox" disabled="disabled">Add link on topbar</input>-->
 <hr>
 <input type="submit" name="submit" value="Install"></input><hr>
 <b>Important:</b> This Version of Icefile is Only Useable on boards running Blargboard Plus and XD
