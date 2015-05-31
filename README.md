@@ -10,18 +10,8 @@ Public - User can upload files and the files will be listed
 
 ## How to install:
 
-1. Enable the plugin
-2. In the "layout" folder, you will see this
-
-"actionLink('board') => 'Forums',"
-
-Replace that with this:
-
-"actionLink('board') => 'Forums',
-
-actionLink('uploader') => 'Uploader',"
-
-3. Enjoy your copy of IceFile
+1. Enable The Plugin
+2. Enjoy!
 
 ## Support?
 You can fork this and can make your own changes to this.
