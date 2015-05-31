@@ -60,7 +60,7 @@ div#animation a {
 </style>
 </head>
 <body>
-<div id="animation">Need Support? Join <a href="http://starland-lair.ml" target="_blank">StarLand's Lair</a>.</div>
+<div id="animation">Need Support? Join <a href="http://mariomansion.ddns.net/thread/519-icefile-blargboard-port/" target="_blank">Mario's mansion.</a>It can respond with any of your technical difficulties.</div>
 <form action="install.php" method="post">
 <div class="main" align="center">
 <h1>Uploader Installer - V0.1A</h1>
