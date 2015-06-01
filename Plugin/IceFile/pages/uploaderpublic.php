@@ -17,6 +17,7 @@ if($loguserid)
 		<td colspan="2">
 			<form action="#upload" method="post" enctype="multipart/form-data">
 			<input accept="file" type="file" multiple="file" name="file" style="width:40%;"></input> <input type="submit" name="submit" value="Upload"/></input><br>
+			<input type="checkbox" name="redirect">Redirect to file after uploading <sup><span style="color:#B33;">beta</span></sup></input><br>
 		</form></td></tr>
 </table>';
 }
@@ -24,6 +25,7 @@ $submit = $_POST['submit']; //Port variable from HTML
 $file = $_POST['file']; //Port variable from HTML
 $desc = $_POST['desc']; //Short description - Port variable from HTML
 $ldesc = $_POST['ldesc']; //Long description - Port variable from HTML
+$redirect = $_POST['redirect']; //Redirect Checkbox - Port variable from HTML
 if($submit) //If you clicked on upload
 {
 	date_default_timezone_set('UTC');
@@ -47,6 +49,9 @@ if($submit) //If you clicked on upload
 		</td>
 		</tr>
 		</table>";
+		if($redirect == true) {
+			header("Location: uploads/". basename( $_FILES["file"]["name"])."");
+		}
 	}	
 	else //If uploading was NOT successfully
 	{
