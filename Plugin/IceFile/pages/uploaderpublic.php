@@ -11,8 +11,7 @@ if(!$loguserid)
 else
 {
 ?>
-	<table class="outline margin">
-		<tbody><tr class="header1">
+	<table class="outline margin"><tr class="header1">
 			<th colspan="2">
 				Uploader
 			</th>
@@ -21,8 +20,7 @@ else
 		<td colspan="2">
 			<form action="#upload" method="post" enctype="multipart/form-data">
 			<input accept="file" type="file" multiple="file" name="file" style="width:40%;"></input> <input type="submit" name="submit" value="Upload"/></input><br>
-			<input type="checkbox" name="redirect">Redirect to file after uploading <sup><span style="color:#B33;">beta</span></sup></input><br>
-		</form></td></tr>
+			</form></td></tr>
 </table><?php
 }
 $submit = $_POST['submit']; //Port variable from HTML
