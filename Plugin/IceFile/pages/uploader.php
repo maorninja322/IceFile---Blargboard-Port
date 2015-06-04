@@ -12,8 +12,7 @@ $links = array();
 			</th>
 		</tr>
 		<tr class="cell0">
-		<td>
-			<div align="center"><a href="?page=uploaderpublic">Upload Files (Public)</a></div>
+		<td align="center"><a href="?page=uploaderpublic">Upload Files</a>
 		</td>
 		</tr>
 </tbody></table>
@@ -24,8 +23,7 @@ $links = array();
 			</th>
 		</tr>
 		<tr class="cell0">
-		<td>
-			<div align="center"><a href="?page=uploadedpublic">Show Uploaded Files</a></div>
+		<td align="center"><a href="?page=uploadedpublic">Show Uploaded Files</a>
 		</td>
 		</tr>
 </tbody></table>
