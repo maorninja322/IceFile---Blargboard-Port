@@ -1,5 +1,6 @@
 <?php
-mkdir("./uploads", 0700);
+if(!file_exists("./uploads")) {	mkdir("./uploads", 0700);		
+}
 if (!defined('BLARG')) die();
 MakeCrumbs(array(actionLink("uploader") => __("Uploader")), $links);
 $title = __("Uploader");
